@@ -1,0 +1,17 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  // The below defines what 1rem is
+  font-size: 62.5%;
+  /* It is a good practice not to use pixels and rather use percentages as this would allow for fluid layouts. */
+}
+
+body {
+  box-sizing: border-box;
+}
