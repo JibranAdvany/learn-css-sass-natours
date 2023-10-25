@@ -38,7 +38,11 @@
 
   &__left {
     width: 33.333333%;
-    display: table-cell;
+    display: none;
+
+    @include respond(big-desktop) {
+      display: table-cell;
+    }
   }
 
   &__right {
@@ -69,6 +73,16 @@
     -ms-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto;
+
+    @include respond(phone) {
+      -moz-column-count: 1;
+      -moz-column-gap: 0;
+      -moz-column-rule: none;
+
+      column-count: 1;
+      column-gap: o;
+      column-rule: none;
+    }
   }
 
   &:target &__content {
